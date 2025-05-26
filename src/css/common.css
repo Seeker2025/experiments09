@@ -3,3 +3,8 @@ body{
     background-color: rgb(127, 75, 75);
     padding: 30px;
 }
+.card{
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
