@@ -7,11 +7,12 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./container.css');
+@import url('./page03.css');
 
 
 /* Sections style */
 
 
-@import url('./badges.css');
-@import url('./back-link.css');
+/* @import url('./badges.css');
+@import url('./back-link.css'); */
 
