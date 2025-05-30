@@ -13,7 +13,7 @@
 .container_page_03{
     padding: 15px;
     height:80px;
-    width: 800px;
+    width: 950px;
     background-color: rgb(56, 47, 64);
     display: flex;
     flex-direction: row;
@@ -25,7 +25,8 @@
     margin: 8px 0 0;
     padding: 8px 12px;
     font-size: 1.2em;
-    border-radius: 7px;
+    border-radius: 5px;
     background-color: rgb(56, 47, 64);
+    border: 1px solid #fff;
     color: #fff;
 }
