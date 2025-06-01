@@ -60,6 +60,7 @@ function onSearch(e){
  })
 .catch(error=>{
     console.log(error);
+    alert('This is a catch!')
  })
  }
     
