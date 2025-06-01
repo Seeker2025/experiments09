@@ -1,2 +1,2 @@
-import"./assets/stylesAll-Cal2oIdQ.js";console.log("page 05");
+import"./assets/styles-DQH9p5Me.js";console.log("page 05");
 //# sourceMappingURL=page-5.js.map
