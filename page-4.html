@@ -16,6 +16,51 @@
     <main>
        <h1>Page 04</h1>
        <a href="./index.html">Home</a>
+
+        <form class="search-form js-search-form">
+          <div class="form-group">
+            <label for="searchQuery" class="sr-only">Що шукаємо?</label>
+            <input
+              type="text"
+              class="form-control"
+              name="query"
+              id="searchQuery"
+              placeholder="Що шукаємо?"
+              autocomplete="off"
+              />
+          </div>
+         
+        <button type="submit" class="btn btn-primary">Шукати</button>  
+        </form>
+
+      <ul class="articles js-articles-container"></ul>
+
+      <button
+        type="button"
+        class="btn btn-primary button"
+        data-action="load-more"
+        >
+        <span
+          class="spinner-border"
+          role="status"
+          aria-hidden="true"
+        ></span>
+
+        <span
+          class="spinner-border"
+          role="status"
+          aria-hidden="true"
+        ></span>
+
+        <span class="label">Показати ще</span>
+      
+      </button>
+
+
+
+
+
+
     </main>
 
   </body>
