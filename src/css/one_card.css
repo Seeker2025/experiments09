@@ -1,0 +1,19 @@
+.li_back{
+    background-color: brown;
+    width: 400px;
+    border: 4px dashed gold;
+    padding: 10px;
+
+    
+
+   
+}
+
+h2.title_h2{
+    color: blue;
+    font-size: 1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+p{
+    color: gold;
+}

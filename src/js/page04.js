@@ -2,9 +2,11 @@ console.log('page 04');
 
 // default export
 import  NewsApiService  from './news-service';
+//named import and renaming
 import { appendArticlesMarkup as appendArticlesMarkUp }  from './markup.js';
 // console.log(NewsApiService);
 // console.log(draftUp);
+
 
 const refs = {
     searchForm: document.querySelector('.js-search-form'),
@@ -39,17 +41,22 @@ function onSearch(e){
     // .then(r => r.json()).then(console.log());
 
     newsApiService.fetchArticles().then(articles=>{
-        console.log(articles[0].url);
-        console.log(articles[0].urlToImage);
-        const arrMarkUp = articles.map(appendArticlesMarkUp);
+        // console.log(articles[0].url);
+        // console.log(articles[0].urlToImage);
+         articles.map(itm =>{
+            appendArticlesMarkUp(itm);
+    }
         
-        console.log(arrMarkUp);
-
-    });
+    )});
 }
 
 function onLoadMore(){
-    newsApiService.fetchArticles().then(articles=>console.log(articles));
+    newsApiService.fetchArticles().then(articles=>{
+            articles.map(itm =>{
+            appendArticlesMarkUp(itm);
+    }
+
+    )});
 }
 
 
