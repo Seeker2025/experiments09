@@ -1,4 +1,4 @@
-import"./assets/styles-DQH9p5Me.js";console.log("page 02. First pokemon");function s(e){const r=`
+import"./assets/styles-DVYB7QxO.js";console.log("page 02. First pokemon");function s(e){const r=`
     <div class="card">
         <h2 class="card-text-id">pokemon id:${e.id}</h2>
           <div class="card-img-top">
