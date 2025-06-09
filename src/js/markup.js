@@ -1,6 +1,6 @@
 import '../css/one_card.css';
 
-export {appendArticlesMarkup};
+export {appendArticlesMarkup, clearArticlesContainer};
 
 const refsMar = {
     articlesContainer: document.querySelector('.js-articles-container'),
@@ -24,3 +24,6 @@ const refsMar = {
 return refsMar.articlesContainer.insertAdjacentHTML('beforeend', markUp);
 }
 
+function clearArticlesContainer(){
+    refsMar.articlesContainer.innerHTML = '';
+}

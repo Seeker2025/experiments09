@@ -1,11 +1,17 @@
 console.log('page 04');
 
 // default export
-import  NewsApiService  from './news-service';
-//named import and renaming
-import { appendArticlesMarkup as appendArticlesMarkUp }  from './markup.js';
+import NewsApiService  from './news-service';
+import LoadMoreBtn from './loadMoreBtn.js';
+//named import and renaming function
+import { 
+            appendArticlesMarkup as appendArticlesMarkUp,
+            clearArticlesContainer 
+        }  from './markup.js';
 // console.log(NewsApiService);
 // console.log(draftUp);
+// console.log(clearArticlesContainer);
+console.log(LoadMoreBtn);
 
 
 const refs = {
@@ -19,6 +25,7 @@ const refs = {
 // console.log(refs.loadMoreBtn);
 
 const newsApiService = new NewsApiService();
+const loadMoreBtn = new LoadMoreBtn({selector:'[data-action="load-more"]'});
 
 // const options = {
 //     headers: {
@@ -32,8 +39,13 @@ refs.loadMoreBtn.addEventListener('click', onLoadMore);
 function onSearch(e){
     e.preventDefault();
 
+    clearArticlesContainer();
     newsApiService.query = e.currentTarget.elements.query.value;
-     newsApiService.resetPage();
+    newsApiService.resetPage();
+
+    if(newsApiService.query === ' '){
+        return alert('Введіть щось');
+    }
     // const url = `https://newsapi.org/v2/everything?q=${searchQuery}&language=en&pageSize=5&page=1`;
    
     // console.log('Hi!');
@@ -58,6 +70,7 @@ function onLoadMore(){
 
     )});
 }
+
 
 
 
