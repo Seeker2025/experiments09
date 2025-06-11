@@ -1,7 +1,7 @@
 export default class LoadMoreBtn{
-    constructor({selector}){
+    constructor({selector, hidden = false}){
         this.refs = this.getRefs(selector);
-
+        hidden && this.hide();
     }
     getRefs(selector){
         const refs = {};

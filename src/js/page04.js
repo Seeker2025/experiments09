@@ -11,8 +11,7 @@ import {
 // console.log(NewsApiService);
 // console.log(draftUp);
 // console.log(clearArticlesContainer);
-console.log(LoadMoreBtn);
-
+// console.log(LoadMoreBtn);
 
 const refs = {
     searchForm: document.querySelector('.js-search-form'),
@@ -25,13 +24,20 @@ const refs = {
 // console.log(refs.loadMoreBtn);
 
 const newsApiService = new NewsApiService();
-const loadMoreBtn = new LoadMoreBtn({selector:'[data-action="load-more"]'});
+const loadMoreBtn = new LoadMoreBtn({
+    selector: '[data-action="load-more"]',
+    hidden: true,
+});
+// console.log(loadMoreBtn);
+// console.log(loadMoreBtn.refs);
+// console.log(loadMoreBtn.refs.button);
 
 // const options = {
 //     headers: {
 //         Authorization: 'c7cfa9764acc40e0977baf4dd8dae782',
 //     }
 // };
+// loadMoreBtn.hide();
 
 refs.searchForm.addEventListener('submit', onSearch);
 refs.loadMoreBtn.addEventListener('click', onLoadMore);
@@ -57,6 +63,7 @@ function onSearch(e){
         // console.log(articles[0].urlToImage);
          articles.map(itm =>{
             appendArticlesMarkUp(itm);
+            loadMoreBtn.show();
     }
         
     )});
