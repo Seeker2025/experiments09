@@ -1,4 +1,5 @@
-const API_KEY = 'c7cfa9764acc40e0977baf4dd8dae782';
+const API_KEY =  'c7cfa9764acc40e0977baf4dd8dae782';
+const base_URL = 'https://newsapi.org/v2/everything';
 
 export default class NewsApiService{
     constructor(){
@@ -12,7 +13,7 @@ export default class NewsApiService{
         Authorization: API_KEY,
     }
 };
-const url = `https://newsapi.org/v2/everything?q=${this.searchQuery}&language=en&pageSize=5&page=${this.page}`;
+const url = `${base_URL}?q=${this.searchQuery}&language=en&pageSize=5&page=${this.page}`;
    
     // console.log('Hi!');
         return fetch(url, options)
