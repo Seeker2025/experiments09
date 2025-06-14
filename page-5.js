@@ -1,2 +1,2 @@
-import"./assets/styles-O95wUiJ_.js";console.log("page 05");
+import"./assets/styles-DySbMpAs.js";class s{constructor(o,e,l){this.refs=this.toObj(o,e,l)}toObj(o,e,l){const n={};return n.elem_ul=document.querySelector(o),n.one=document.createElement(l),n.one.classList.add(e),n}}console.log("page 05");const r=new s(".box__05","li_05","li"),u=[1,2,3],c=u.map(t=>{let o=new s(".box__05","li_05","li");console.log(t);const e=o.refs.one;return e.textContent=t,e}),_=document.querySelector(".box__05");console.log(c);r.refs.elem_ul.append(...c);console.log(_);
 //# sourceMappingURL=page-5.js.map
