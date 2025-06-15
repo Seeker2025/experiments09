@@ -1,14 +1,27 @@
 export class forMarkup{
-    constructor(selector, newSelector, tag){
-        this.refs = this.toObj(selector, newSelector, tag);
+    constructor(selector){
+        this.refs = this.toObj(selector);
+        // this.refs = this.toExp();
     }
-    toObj(selector, newSelector, tag){
+    toObj(selector){
+
          const isObj = {};
+         isObj.one = document.createElement('li');
          isObj.elem_ul = document.querySelector(selector);
-         isObj.one = document.createElement(tag);
-         isObj.one.classList.add(newSelector);
          return isObj;
 
+    }
+    toNewElem(num){
+        
+         this.refs.one.classList.add('li_05');
+         this.refs.one.textContent = num;
+        // console.log(this.refs.one);
+        // return this.isObj.one;
+    }
+
+    toExp(){
+        let a = 'a';
+        return 'a';
     }
 
 }

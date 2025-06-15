@@ -1,9 +1,12 @@
 .li_05{
-    width: 50px;
-    height: 50px;
-    background-color: blue;
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(44, 44, 156);
     border: 1px solid red;
     color: #fff;
+    margin: 7px;
+    padding: 5px;
 }
 .box__05{
     display: flex;
