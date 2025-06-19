@@ -1,0 +1,42 @@
+.container{
+    width: 85%;
+    background-color: darkblue;
+    border: 1px solid black;
+    /* margin: 0 auto; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+   
+}
+.characterList li img{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.characterList{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.characterList li{
+    border: 1px solid black;
+    padding: 25px;
+    font-weight: bold;
+    background-color: gray;
+    width: 175px;
+    min-height: 340px;
+    margin: 10px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+.p6_rick{
+    color: rgb(146, 166, 182);
+    font-style: italic;
+}
