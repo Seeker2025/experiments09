@@ -3,6 +3,19 @@ export class markUpP06{
         this.toRick = this.toRick(a);
     }
     toRick(a){
-        return console.log(a);
+       let markUp = null;
+       return markUp = a.map(item=>{
+            return  `
+            <li>
+               <img src="${item.image}" alt="">
+               <p>NAME:${item.name}</p>
+               <p>GENDER:${item.gender}</p>
+               <p>ID: ${item.id}</p>
+               <p>STATUS: ${item.status}</p>
+               <p>CREATED: ${item.created}</p>
+            </li>
+                `
+        }).join('');
+       
     }
 }
