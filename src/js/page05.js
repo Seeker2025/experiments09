@@ -1,4 +1,4 @@
-console.log('page 05 Class');
+console.log('page 05. Class');
 import { forMarkup } from './p5_class';
 
 // console.log(forMarkup);

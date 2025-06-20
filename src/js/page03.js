@@ -1,4 +1,4 @@
-console.log('page 03 Add color square');
+console.log('page 03. Add color square');
 
 // import '../css/page03.css';
 
