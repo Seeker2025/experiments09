@@ -4,12 +4,19 @@ import { markUpP06 } from './p6_class.js';
 
 // const classRick = new markUpP06('Rick_02');
 // classRick.markUpP06;
+const makeDom = x => document.querySelector(x);
+const refP06 = {
+    refBtn: makeDom('button[type="button"]'),
+    count: 1,
+}
+console.log(refP06.refBtn);
 
-function getDate(){
-    fetch('https://rickandmortyapi.com/api/character')
+function getSate(s){
+  
+    fetch(`https://rickandmortyapi.com/api/character/?page=${s}`)
     .then(response=>response.json())
     .then(data => {
-        
+        console.log(data);
         const{results: dataArray}=data
         const classRick = new markUpP06(dataArray);
             const markUp = classRick.toRick;
@@ -27,7 +34,20 @@ function getDate(){
         //         `
         // }).join('');
         document.querySelector('.characterList').innerHTML += markUp;
+        
 })
 }
 
-getDate();
+
+getSate();
+
+refP06.refBtn.addEventListener('click', loadMore);
+
+function loadMore(){
+    refP06.count += 1;
+    console.log(refP06.count);
+   
+   getSate(refP06.count);
+  
+}
+   
