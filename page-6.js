@@ -1,11 +1,11 @@
-import"./assets/styles-CS_QUFV1.js";class s{constructor(t){this.toRick=this.toRick(t)}toRick(t){return t.map(o=>`
+import"./assets/styles-SMsWUO0G.js";class a{constructor(c){this.toRick=this.toRick(c)}toRick(c){return c.map(t=>`
             <li>
-               <img src="${o.image}" alt="">
-               <p>NAME:${o.name}</p>
-               <p>GENDER:${o.gender}</p>
-               <p>ID: ${o.id}</p>
-               <p>STATUS: ${o.status}</p>
-               <p>CREATED: ${o.created}</p>
+               <img src="${t.image}" alt="">
+               <p>NAME:${t.name}</p>
+               <p>GENDER:${t.gender}</p>
+               <p>ID: ${t.id}</p>
+               <p>STATUS: ${t.status}</p>
+               <p>CREATED: ${t.created}</p>
             </li>
-                `).join("")}}console.log("page 06. Rick and Morty");const a=n=>document.querySelector(n),c={refBtn:a('button[type="button"]'),count:1};console.log(c.refBtn);function e(n){fetch(`https://rickandmortyapi.com/api/character/?page=${n}`).then(t=>t.json()).then(t=>{console.log(t);const{results:o}=t,r=new s(o).toRick;document.querySelector(".characterList").innerHTML+=r})}e();c.refBtn.addEventListener("click",i);function i(){c.count+=1,console.log(c.count),e(c.count)}
+                `).join("")}}console.log("page 06. Rick and Morty");const s=o=>document.querySelector(o),n={refBtn:s('button[type="button"]'),count:1};function e(o){fetch(`https://rickandmortyapi.com/api/character/?page=${o}`).then(c=>c.json()).then(c=>{const{results:t}=c,r=new a(t).toRick;document.querySelector(".characterList").innerHTML+=r})}e();n.refBtn.addEventListener("click",i);function i(){n.count+=1,console.log(n.count),e(n.count)}
 //# sourceMappingURL=page-6.js.map
