@@ -1,6 +1,7 @@
 export class markUpP06{
     constructor(a){
         this.toRick = this.toRick(a);
+        // this.count01 = 1;
     }
     toRick(a){
        let markUp = null;
@@ -18,4 +19,7 @@ export class markUpP06{
         }).join('');
        
     }
+    // toAddOne(){
+    //     this.count01 += 1;
+    // }
 }

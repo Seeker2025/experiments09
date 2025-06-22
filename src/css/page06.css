@@ -1,5 +1,5 @@
 body.body_p06{
-    background-color: rgb(78, 78, 93);
+    background-color: rgb(61, 61, 70);
 }
 .container{
     width: 85%;
@@ -11,6 +11,7 @@ body.body_p06{
     justify-content: center;
     align-items: center;
     padding: 15px;
+    flex-direction: column;
    
 }
 .characterList li img{
@@ -42,4 +43,10 @@ body.body_p06{
 .p6_rick{
     color: rgb(146, 166, 182);
     font-style: italic;
+}
+button.button_p06{
+    font-size: 1.5em;
+    padding: 7px 20px;
+     border-radius: 10px;
+     background-color: gray;
 }
