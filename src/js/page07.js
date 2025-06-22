@@ -44,12 +44,12 @@ function getState(){
         
 })
 }
-//     getState();
-// window.addEventListener('scroll', ()=>{
-//     const { scrollHeight, scrollTop, clientHeight }=document.documentElement
-//     if(scrollHeight - clientHeight === scrollTop);
-//     getState();
-// })
+    getState();
+window.addEventListener('scroll', ()=>{
+    const { scrollHeight, scrollTop, clientHeight }=document.documentElement
+    if(scrollHeight - clientHeight === scrollTop);
+    getState();
+})
 // refP06.refBtn.addEventListener('click', loadMore);
 
 // function loadMore(){
