@@ -11,7 +11,6 @@ const refP06 = {
 }
 // console.log(refP06.refBtn);
 
-
 function getSate(s){
   
     fetch(`https://rickandmortyapi.com/api/character/?page=${s}`)
@@ -41,7 +40,6 @@ function getSate(s){
         
 })
 }
-
 
 getSate();
 
