@@ -1,8 +1,8 @@
 import"./assets/styles-SMsWUO0G.js";class a{constructor(c){this.toRick=this.toRick(c)}toRick(c){return c.map(t=>`
             <li>
                <img src="${t.image}" alt="">
-               <p>NAME:${t.name}</p>
-               <p>GENDER:${t.gender}</p>
+               <p>NAME: ${t.name}</p>
+               <p>GENDER: ${t.gender}</p>
                <p>ID: ${t.id}</p>
                <p>STATUS: ${t.status}</p>
                <p>CREATED: ${t.created}</p>
