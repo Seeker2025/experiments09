@@ -9,8 +9,8 @@ export class markUpP06{
             return  `
             <li>
                <img src="${item.image}" alt="">
-               <p>NAME:${item.name}</p>
-               <p>GENDER:${item.gender}</p>
+               <p>NAME: ${item.name}</p>
+               <p>GENDER: ${item.gender}</p>
                <p>ID: ${item.id}</p>
                <p>STATUS: ${item.status}</p>
                <p>CREATED: ${item.created}</p>
