@@ -1,0 +1,1 @@
+{"version":3,"file":"page-9.js","sources":["../src/js/page09.js"],"sourcesContent":["console.log('page 09');\n\n// const isObj = new IsObs({\n//     one: bed,\n//     two: chair,\n// });"],"names":[],"mappings":"oCAAA,QAAQ,IAAI,SAAS"}

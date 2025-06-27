@@ -1,4 +1,4 @@
-import"./assets/styles-SMsWUO0G.js";console.log("page 07. Infinite scroll");let c=1;function o(){fetch(`https://rickandmortyapi.com/api/character/?page=${c}`).then(e=>e.json()).then(e=>{const{results:n}=e,r=n.map(t=>`
+import"./assets/styles-DQ82frmz.js";console.log("page 07. Infinite scroll");let c=1;function o(){fetch(`https://rickandmortyapi.com/api/character/?page=${c}`).then(e=>e.json()).then(e=>{const{results:n}=e,r=n.map(t=>`
             <li>
                <img src="${t.image}" alt="">
                <p>NAME: ${t.name}</p>
