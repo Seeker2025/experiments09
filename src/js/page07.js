@@ -1,5 +1,6 @@
 console.log('page 07. Infinite scroll');
 ////// нескінченний скролл
+// console.log('d');
 
 
 // const classRick = new markUpP06();
