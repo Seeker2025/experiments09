@@ -1,14 +1,6 @@
 console.log('page 08');
 ////// Погода в містах світу
 
-// function toFun(){
-//     console.log('a');
-// }
-// function toBun(){
-//     return toFun();
-// }
-// toBun();
-
 const search = document.querySelector('.js-search');
 const list = document.querySelector('.js-list');
 
