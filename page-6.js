@@ -1,4 +1,4 @@
-import"./assets/styles-DQ82frmz.js";class a{constructor(c){this.toRick=this.toRick(c)}toRick(c){return c.map(t=>`
+import"./assets/styles-q4qmUVT2.js";class a{constructor(c){this.toRick=this.toRick(c)}toRick(c){return c.map(t=>`
             <li>
                <img src="${t.image}" alt="">
                <p>NAME: ${t.name}</p>
