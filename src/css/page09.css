@@ -1,0 +1,29 @@
+.box_09{
+    width: 380px;
+    height:auto;
+    border: 2px solid rgb(11, 11, 11);
+    margin: 10px;
+    padding: 15px 15px 0px;
+    background-color: rgb(252, 252, 252);
+}
+.box_09 h2{
+    color: #747474;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding: 15px 0 5px;
+}
+ul.js-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button[type="button"]{
+    background-color: rgb(16, 90, 208);
+    color: #fff;
+    font-size: 1.2em;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
