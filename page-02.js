@@ -17,4 +17,4 @@ import"./assets/styles-q4qmUVT2.js";console.log("page 02. First pokemon");functi
           </div>
     </div>
     `;return t.cardConainer.innerHTML=r}const t={cardConainer:document.querySelector(".js-card-container"),searcForm:document.querySelector(".js-search-form")};console.log(t.searcForm);t.searcForm.addEventListener("submit",a);function a(e){e.preventDefault();const c=e.currentTarget.elements.query.value;o(c),t.searcForm.reset()}function o(e){fetch(`https://pokeapi.co/api/v2/pokemon/${e}`).then(r=>r.json()).then(r=>{console.log(r),s(r)}).catch(r=>{console.log(r),alert("This is a catch!")})}
-//# sourceMappingURL=page-2.js.map
+//# sourceMappingURL=page-02.js.map

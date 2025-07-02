@@ -6,4 +6,4 @@ import"./assets/styles-q4qmUVT2.js";console.log("page 08");const s=document.quer
                 <h3>${e}</h3>
             </li>
         `).join("");return a.insertAdjacentHTML("beforeend",n)}
-//# sourceMappingURL=page-8.js.map
+//# sourceMappingURL=page-08.js.map

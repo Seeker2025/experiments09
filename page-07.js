@@ -8,4 +8,4 @@ import"./assets/styles-q4qmUVT2.js";console.log("page 07. Infinite scroll");let 
                <p>CREATED: ${t.created}</p>
             </li>
                 `).join("");document.querySelector(".characterList").innerHTML+=r,c++})}o();window.addEventListener("scroll",()=>{const{scrollHeight:e,scrollTop:n,clientHeight:r}=document.documentElement;o()});
-//# sourceMappingURL=page-7.js.map
+//# sourceMappingURL=page-07.js.map
