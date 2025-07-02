@@ -1,25 +1,35 @@
-console.log('page 09');
+console.log('page 10. Observer');
 
 const list = document.querySelector('ul.js-list');
 const loadMore = document.querySelector('[type="button"]');
+const target = document.querySelector('.js-guard');
 let currentPage = 1;
 
-loadMore.addEventListener('click', onLoad);
+var options = {
+  root: null,
+  rootMargin: "200px",
+  threshold: 1.0,
+};
 
-// console.log(list);
-// console.log(button);
+var observer = new IntersectionObserver(onLoad, options);
+function onLoad(entries, observer){
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+                console.log(entries);
+                currentPage += 1 ;
 
-function onLoad(){
-    currentPage += 1 ;
-    getTrending(currentPage)
-    .then(data => {
-    markUp(data.results)
-    if(data.page === data.total_pages){
-        loadMore.hidden = true; ////// hidden button Load More
-    }
-})
-    .catch(err => console.log(err));
-}
+                getTrending(currentPage).then(data=>{
+
+                markUp(data.results);
+                if(data.page === data.total_pages){
+                 observer.unobserve(target);
+                 }
+                              
+                })
+                .catch(err=>console.log(err));
+            }
+    })
+ }
 
 const BASE_URL = 'https://api.themoviedb.org/3/';
 const ENDPOINT = 'trending/movie/day';
@@ -34,21 +44,16 @@ function getTrending(page=1){
     })
 }
 getTrending().then(data=>{
-    // console.log(data.results[0].poster_path);
-    // console.log(data.results);
-    // console.log(data);
-    markUp(data.results);
-    if(data.page !== data.total_pages){
-        loadMore.hidden = false;
-    }
 
+    markUp(data.results);
+    observer.observe(target);   
 })
 .catch(err=>console.log(err));
 
 function markUp(arr){
     let draft = null;
     draft = arr.map(({poster_path, title})=>{
-//    console.log(poster_path)
+
 //////there is an image width in the endpoint     
       return   `
          <li class="box_09">
@@ -59,4 +64,12 @@ function markUp(arr){
     }
 )
     return list.insertAdjacentHTML('beforeend', draft);
+}
+
+let counter = 1;
+window.addEventListener('scroll', onScroll)
+
+function onScroll(){
+    counter += 1
+    console.log(counter);
 }
