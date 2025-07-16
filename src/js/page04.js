@@ -1,4 +1,4 @@
-console.log('page 04');
+console.log('page 04 News');
 
 // default export
 import NewsApiService  from './news-service';

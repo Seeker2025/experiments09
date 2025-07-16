@@ -1,4 +1,4 @@
-console.log('page 08');
+console.log('page 08. Weather');
 ////// Погода в містах світу
 
 const search = document.querySelector('.js-search');
@@ -32,7 +32,7 @@ function onSearch(evt){
 
 function getWeather(city, days){
 
-    const BASE_URL = 'https://api.weatherapi.com/v1/';
+    const BASE_URL = 'https://api.weatherapi.com/v1';
     const API_KEY = '65fc8710104c48e595e140016252406';
     
     const params = new URLSearchParams({
