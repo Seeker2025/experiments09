@@ -14,9 +14,11 @@ function onSearch(evt){
     const{query, days} = evt.currentTarget.elements;
 
     // console.log(query.value);
-    // console.log(days.value);
+    console.log(days.value);
+    let daysNum = Number(days.value);
+    console.log(typeof(daysNum));
    
-    getWeather(query.value, days.value)
+    getWeather(query.value, daysNum)
     .then(data =>{
         console.log(data.forecast.forecastday);
         list.innerHTML = '';
@@ -28,7 +30,6 @@ function onSearch(evt){
     
 }
 // http://api.weatherapi.com/v1/forecast.json?key=65fc8710104c48e595e140016252406&q=Paris
-
 
 function getWeather(city, days){
 
@@ -64,6 +65,6 @@ function createMarkUp(arr){
             </li>
         `).join('');
 
-     return  list.insertAdjacentHTML('beforeend', markUp);
+       list.insertAdjacentHTML('beforeend', markUp);
 }
 
